@@ -4,10 +4,14 @@
 \alias{fav_by_author}
 \title{retrieve my twitter favorites from a given user}
 \usage{
-fav_by_author(likes_user = "stchlk", twitter_user, ...)
+fav_by_author(twitter_user, likes_user = "stchlk", ...)
 }
 \arguments{
-\item{...}{}
+\item{twitter_user}{the user whose tweets were favorited}
+
+\item{likes_user}{the user whose favorite we'll query}
+
+\item{...}{additional arguments passed to \code{rtweet::get_favorites}}
 }
 \value{
 
